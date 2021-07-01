@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="./style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="./assets/script/script.js"></script>
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -24,7 +26,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#myPage">
-                    <img src="logo.png" alt="logo" width="50" height="60">
+                    <img src="./assets/images/logo.png" alt="logo" width="50" height="60">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -88,42 +90,9 @@
     <div id="education" class="container-fluid text-center">
         <h2>EDUCATION</h2>
         <h4>What I did:</h4>
-        <br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-off logo-small"></span>
-                <h4>POWER</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-heart logo-small"></span>
-                <h4>LOVE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-lock logo-small"></span>
-                <h4>JOB DONE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf logo-small"></span>
-                <h4>GREEN</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate logo-small"></span>
-                <h4>CERTIFIED</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench logo-small"></span>
-                <h4 style="color:#303030;">HARD WORK</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
+        <li>Software Engineering for one semester in Polytechnic de Montreal</li>
+        <li>Electrical Engineering for one year in Polytechnic de Montreal</li>
+        <li>Computer Science and Mathematc for three years in College Maisonneuve</li>
     </div>
 
     <!-- Container (Project Section) -->
@@ -192,40 +161,40 @@
     <div id="hobbie" class="container-fluid">
         <div class="text-center">
             <h2>Hobbie</h2>
-            <h4>what I like</h4>
+            <h4>What I like</h4>
             <div class="row slideanim">
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-off logo-small"></span>
-                    <h4>POWER</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-music logo-small"></span>
+                    <h4>Listen to music</h4>
+                    <p>Lofi, jazz and kpop</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-heart logo-small"></span>
-                    <h4>LOVE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-film logo-small"></span>
+                    <h4>Watch Youtube</h4>
+                    <p>Variety show and dramas</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-lock logo-small"></span>
-                    <h4>JOB DONE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-education logo-small"></span>
+                    <h4>Learn new language</h4>
+                    <p>Japanese, Chinese and Korean</p>
                 </div>
             </div>
             <br><br>
             <div class="row slideanim">
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-leaf logo-small"></span>
-                    <h4>GREEN</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-text-background logo-small"></span>
+                    <h4>Learn coding</h4>
+                    <p>HTML, CSS and C++</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
-                    <h4>CERTIFIED</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-ice-lolly-tasted logo-small"></span>
+                    <h4>Bake</h4>
+                    <p>Cake, cookie and muffin</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-wrench logo-small"></span>
-                    <h4 style="color:#303030;">HARD WORK</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <span class="glyphicon glyphicon-calendar logo-small"></span>
+                    <h4 style="color:#303030;">Attend Hackthons</h4>
+                    <p>MariHack, PolyHx and McHack8</p>
                 </div>
             </div>
         </div>
@@ -272,43 +241,6 @@
         <p>Thank bootstrap to make the theme. Here's a link of them: <a href="https://www.w3schools.com"
                 title="Visit w3schools">www.w3schools.com</a></p>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
-                });
-            });
-        })
-    </script>
 
 </body>
 

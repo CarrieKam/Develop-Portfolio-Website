@@ -42,7 +42,7 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>Carrie Kam</h1>
+        <h1>Hello</h1>
         <p>Student in Software Engineering</p>
     </div>
 
@@ -213,19 +213,24 @@
             </div>
             <div class="col-sm-7 slideanim">
                 <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
-                    rows="5"></textarea><br>
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
-                    </div>
+
+                    <form>
+                        <div class="col-sm-6 form-group">
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Name"
+                                required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Email"
+                                required>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>

@@ -30,7 +30,9 @@
         .container-fluid {
             padding: 60px 50px;
         }
-
+        #about.container-fluid {
+            padding: 1em 20em;
+        }
         .bg-grey {
             background-color: #f6f6f6;
         }
@@ -56,7 +58,9 @@
             height: 100%;
             margin-bottom: 10px;
         }
-
+        #myCarousel{
+            padding:3em;
+        }
         .carousel-control.right,
         .carousel-control.left {
             background-image: none;

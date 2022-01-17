@@ -44,6 +44,7 @@
     <div class="jumbotron text-center">
         <h1>Hello</h1>
         <p>Student in Software Engineering</p>
+        <button type="submit" class="button" onclick="window.open('docs/resume_en_Carrie.pdf')">Resume/CV</button>
     </div>
 
     <!-- Container (About Section) -->
@@ -51,14 +52,11 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2>About me</h2><br>
-                <h4>I'm guild leader of justhereforswags. </h4><br>
-                <p>I'm a maybe second year student at Polytechnique de Montreal in Software Engineering. I learned java
-                    in school for two years, self-learned html, css and C++. I learned C++ at school for
-                    half a year.
-                    I love hackathons very much. I attended to a lot of them in order to learn more things about
-                    programming and
-                    making new friends.
-                </p>
+                <ul>
+                    <li>Web developper, front-end and App development enthousiast</li>
+                    <li>Learned: Java in CÉGEP for 2 years & C++ for one semester</li>
+                    <li>Self-taught: HTML, CSS, C++, React</li>
+                </ul>
                 <br>
             </div>
             <div class="col-sm-4">
@@ -67,27 +65,8 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
-                <h2>My Values</h2><br>
-                <h4>I love equality. I'm always trying my best to manage a balance in whatever I'm doing, In projects,
-                    I try my best to make everyone having the same amount of load of work to do and be happy about it.
-                    If the project is about a subject that I don't know. I would prefer to learn by myself and ask
-                    teammates to help me
-                    understand it in to take less time at the end to figure out what to do.</h4><br>
-                <p><strong>VISION:</strong> I want to make everyone to be happy with what they have. I try my best to
-                    respect everyone's situation. No one has no flaws. When I'm stressed I may behave a bit irritated.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Container (education Section) -->
-    <div id="education" class="container-fluid text-center">
+    <!-- Container (Education Section) -->
+    <div id="education" class="container-fluid text-center bg-grey">
         <h2>EDUCATION</h2>
         <h4>What I did:</h4>
         <li>Software Engineering for one semester in Polytechnic de Montreal</li>
@@ -96,13 +75,13 @@
     </div>
 
     <!-- Container (Project Section) -->
-    <div id="projects" class="container-fluid text-center bg-grey">
+    <div id="projects" class="container-fluid text-center">
         <h2>Projects</h2><br>
         <h4>What I did</h4>
         <div class="row text-center slideanim">
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="./assets/images/scheduler.png" alt="Scheduler" width="400" height="300">
+                    <img src="./assets/gif/scheduler.gif" alt="Scheduler" width="400" height="300">
                     <p><strong>Scheduler</strong></p>
                     <p>Yes, we built it yesterday</p>
                 </div>
@@ -122,40 +101,41 @@
                 </div>
             </div>
         </div><br>
-
-        <h2>What I've learned</h2>
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <h4>"Coding is hard"</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Google is our best friend with StackOverflow"</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Semi-colons are important"</span></h4>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
     </div>
+
+    <div id="myCarousel" class="carousel slide text-center bg-grey" data-ride="carousel">
+        <h2>What I've learned</h2>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"Coding is hard"</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Google is our best friend with StackOverflow"</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Semi-colons are important"</span></h4>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
 
     <!-- Container (HOBBIE Section) -->
     <div id="hobbie" class="container-fluid">
@@ -165,13 +145,13 @@
             <div class="row slideanim">
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-music logo-small"></span>
-                    <h4>Listen to music</h4>
-                    <p>Lofi, jazz and kpop</p>
+                    <h4>Music</h4>
+                    <p>Play violin, listen</p>
                 </div>
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-film logo-small"></span>
-                    <h4>Watch Youtube</h4>
-                    <p>Variety show and dramas</p>
+                    <h4>Gaming</h4>
+                    <p>Genshin, Valorant, etc.</p>
                 </div>
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-education logo-small"></span>
@@ -194,7 +174,7 @@
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-calendar logo-small"></span>
                     <h4 style="color:#303030;">Attend Hackthons</h4>
-                    <p>MariHack, PolyHx and McHack8</p>
+                    <p>MariHack, PolyHx, McHack8, etc.</p>
                 </div>
             </div>
         </div>
@@ -206,45 +186,25 @@
         <h2 class="text-center">CONTACT</h2>
         <div class="row">
             <div class="col-sm-5">
-                <p>Thanks for contacting me. I will try my best to help you~</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span>Quebec, CAD</p>
-                <p><span class="glyphicon glyphicon-phone"></span> xxx-xxxx-xxxx</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> carrieKam@protonmail.com</p>
+                <p>Thanks for reading. I will try my best to help you~</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Montreal, QC</p>
             </div>
-            <div class="col-sm-7 slideanim">
-                <div class="row">
 
-                    <form>
-                        <div class="col-sm-6 form-group">
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Name"
-                                required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Email"
-                                required>
-                        </div>
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
-                            </div>
-                        </div>
+            <div class="col-sm-6">
+                <a href="https://www.linkedin.com/in/carrie-kam-1837b3193/"><img src="assets/images/social/linkedin.png" alt="linkedin" id="social">
+                <a href="https://github.com/CarrieKam"><img src="assets/images/social/github.png" alt="github" id="social">
+                <a href="mailto:carriekam@protonmail.com"><img src="assets/images/social/email.png" alt="email" id="social">
 
-                    </form>
-                </div>
             </div>
         </div>
     </div>
 
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
     <footer class="container-fluid text-center">
         <a href="#myPage" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p>Thank bootstrap to make the theme. Here's a link of them: <a href="https://www.w3schools.com"
-                title="Visit w3schools">www.w3schools.com</a></p>
     </footer>
 
 </body>

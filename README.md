@@ -1,5 +1,5 @@
-Welcome to my portfolio! 
+# Welcome to my portfolio! 🖐
 
-This is the new version of my portfolio! I'm still working on it, but it will be done shortly!
+I hope you have a better understand of me~ 
 
-Carrie
+Feel free to contact me!

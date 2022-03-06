@@ -230,14 +230,30 @@
         }
 
         .button{
-            border-radius: 12px;
-            transition-duration: 0.4s;
-            color:var(--primary-color);
-            padding:15px;
-            margin-top: 25px;
+            background: #ff8e6b;
+            background-image: -webkit-linear-gradient(top, #ff8e6b, #ffb742);
+            background-image: -moz-linear-gradient(top, #ff8e6b, #ffb742);
+            background-image: -ms-linear-gradient(top, #ff8e6b, #ffb742);
+            background-image: -o-linear-gradient(top, #ff8e6b, #ffb742);
+            background-image: linear-gradient(to bottom, #ff8e6b, #ffb742);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: var(--primary-color);
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: dotted #ffffff 5px;
+            text-decoration: none;
+            margin:20px;
         }
 
         .button:hover{
-            background-color: wheat;
-            color:var(--primary-color);
+            background: #f7e394;
+            background-image: -webkit-linear-gradient(top, #f7e394, #ffd0a1);
+            background-image: -moz-linear-gradient(top, #f7e394, #ffd0a1);
+            background-image: -ms-linear-gradient(top, #f7e394, #ffd0a1);
+            background-image: -o-linear-gradient(top, #f7e394, #ffd0a1);
+            background-image: linear-gradient(to bottom, #f7e394, #ffd0a1);
+            text-decoration: none;
         }

@@ -1,22 +1,16 @@
 :root {
     --primary-color: #f4511e;
-    --gradient-up-no-hover:#f86e44;
-    --gradient-bottom-no-hover:#ffb742;
-    --text-button-no-hover:#ffffff;
-    --gradient-up-hover:#f7e394;
-    --gradient-bottom-hover:#ffd0a1;
+    --gradient-up-no-hover: #f86e44;
+    --gradient-bottom-no-hover: #ffb742;
+    --text-button-no-hover: #ffffff;
+    --gradient-up-hover: #f7e394;
+    --gradient-bottom-hover: #ffd0a1;
 }
 
 body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 20px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-}
-
-h3 {
-    color:var(--primary-color);
-    font-weight: bold;
-
 }
 
 h2 {
@@ -25,6 +19,11 @@ h2 {
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 h4 {
@@ -37,12 +36,12 @@ h4 {
 
 h5 {
     font-size: 15px;
-    color:#303030;
+    color: #303030;
     font-weight: bold;
 }
 
 a > p {
-    color:#818181;
+    color: #818181;
 }
 
 .jumbotron {
@@ -260,27 +259,46 @@ footer .glyphicon {
     color: var(--primary-color);
 }
 
+/*---------------TOP BUTTON-----------------------*/
 #topButton {
     display: none;
-    position: fixed; 
-    bottom: 50px; 
-    right: 30px; 
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
     z-index: 99;
-    border: none; 
-    outline: none; 
-    background-color: var(--gradient-bottom-no-hover); 
+    border: none;
+    outline: none;
+    background-color: var(--gradient-bottom-no-hover);
     cursor: pointer;
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;
     opacity: 60%;
-  }
-  
-  #topButton:hover {
-    background-color: var(--gradient-bottom-hover); 
-  }
+}
 
-  /*------------------------------Screen size difference-------------------------*/
-  @media screen and (max-width: 768px) {
+#topButton:hover {
+    background-color: var(--gradient-bottom-hover);
+}
+
+/*----------PROJECT-----------*/
+.project {
+    border:1.5vh solid transparent;
+    padding:1em;
+}
+.project:hover {
+    border: 1.5vh solid var(--primary-color);
+}
+
+.project img {
+    width: 70em;
+    padding:1em;
+}
+
+a > .project:hover > p{
+    text-decoration: none;
+}
+
+/*------------------------------Screen size difference-------------------------*/
+@media screen and (max-width: 768px) {
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
@@ -290,15 +308,13 @@ footer .glyphicon {
         width: 100%;
         margin-bottom: 35px;
     }
-    .project img {
-        width: 70vw;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
     }
+
     .project img {
         width: 70vw;
         margin-bottom: 10px;
@@ -306,9 +322,7 @@ footer .glyphicon {
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
-and (min-width: 801px) and (max-width: 1024px)
-{
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
     .project img {
         width: 90vw;
         margin-bottom: 10px;
@@ -316,9 +330,7 @@ and (min-width: 801px) and (max-width: 1024px)
 
 }
 
-@media only screen 
-and (min-width: 1024px)
-{
+@media only screen and (min-width: 1024px) {
     .project img {
         width: 60vw;
         margin-bottom: 10px;

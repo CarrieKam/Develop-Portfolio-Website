@@ -13,6 +13,12 @@ body {
     color: #818181;
 }
 
+h3 {
+    color:var(--primary-color);
+    font-weight: bold;
+
+}
+
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -27,6 +33,16 @@ h4 {
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
+}
+
+h5 {
+    font-size: 15px;
+    color:#303030;
+    font-weight: bold;
+}
+
+a > p {
+    color:#818181;
 }
 
 .jumbotron {
@@ -59,12 +75,7 @@ h4 {
     font-size: 200px;
 }
 
-.project img {
-    width: 80%;
-    height: 80%;
-    margin-bottom: 10px;
-}
-
+/*-----------CAROUSEL--------------*/
 #myCarousel {
     padding: 3em;
 }
@@ -95,6 +106,7 @@ h4 {
     font-style: normal;
 }
 
+/*-------------PANEL-----------------------------*/
 .panel {
     border: 1px solid var(--primary-color);
     border-radius: 0 !important;
@@ -141,6 +153,8 @@ h4 {
     color: #fff;
 }
 
+
+/*--------------------------NAVBAR---------------------------*/
 .navbar {
     margin-bottom: 0;
     background-color: var(--primary-color);
@@ -210,27 +224,11 @@ footer .glyphicon {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-}
-
 #social {
     padding: 15px;
 }
+
+/*-----------------------BUTTON-----------------------*/
 
 .button {
     background: #ff8e6b;
@@ -263,20 +261,65 @@ footer .glyphicon {
 }
 
 #topButton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: var(--gradient-bottom-no-hover); /* Set a background color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    display: none;
+    position: fixed; 
+    bottom: 50px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: var(--gradient-bottom-no-hover); 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px; 
     opacity: 60%;
   }
   
   #topButton:hover {
-    background-color: var(--gradient-bottom-hover); /* Add a dark-grey background on hover */
+    background-color: var(--gradient-bottom-hover); 
   }
+
+  /*------------------------------Screen size difference-------------------------*/
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .project img {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+    .project img {
+        width: 70vw;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width: 801px) and (max-width: 1024px)
+{
+    .project img {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen 
+and (min-width: 1024px)
+{
+    .project img {
+        width: 60vw;
+        margin-bottom: 10px;
+    }
+}

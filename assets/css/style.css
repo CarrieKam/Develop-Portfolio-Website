@@ -5,6 +5,7 @@
     --text-button-no-hover: #ffffff;
     --gradient-up-hover: #f7e394;
     --gradient-bottom-hover: #ffd0a1;
+    --backgroung-color:#f1f0f5cc;
 }
 
 body {
@@ -61,7 +62,7 @@ a > p {
 }
 
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: var(--backgroung-color);
 }
 
 .logo-small {

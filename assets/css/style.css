@@ -6,6 +6,11 @@
     --gradient-up-hover: #f7e394;
     --gradient-bottom-hover: #ffd0a1;
     --backgroung-color:#f1f0f5cc;
+    --header-color:303030;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +22,7 @@ body {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: var(--header-color);
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -30,14 +35,14 @@ h3 {
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: var(--header-color);;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
 h5 {
     font-size: 15px;
-    color: #303030;
+    color: var(--header-color);;
     font-weight: bold;
 }
 

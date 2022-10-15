@@ -286,7 +286,7 @@ footer .glyphicon {
 }
 
 /*----------PROJECT-----------*/
-.project {
+/* .project {
     border:1.5vh solid transparent;
     padding:1em;
 }
@@ -301,6 +301,12 @@ footer .glyphicon {
 
 a > .project:hover > p{
     text-decoration: none;
+} */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin:1em;
 }
 
 /*------------------------------Screen size difference-------------------------*/
@@ -325,20 +331,32 @@ a > .project:hover > p{
         width: 70vw;
         margin-bottom: 10px;
     }
+
+    .project iframe {
+        width: 70vw;
+        height:50vh;
+    }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
-    .project img {
-        width: 90vw;
+    .project img,iframe {
+        width: 84vw;
         margin-bottom: 10px;
     }
-
+    .project iframe {
+        width: 84vw;
+        height:50vh;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-    .project img {
-        width: 60vw;
+    .project img,iframe {
+        width: 28vw;
         margin-bottom: 10px;
+    }
+    .project iframe {
+        width: 28vw;
+        height:30vh;
     }
 }

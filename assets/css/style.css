@@ -163,12 +163,9 @@ a > p {
 .navbar {
     margin-bottom: 0;
     background-color: var(--primary-color);
-    z-index: 9999;
     border: 0;
     font-size: 12px !important;
-    line-height: 1.42857143 !important;
     letter-spacing: 4px;
-    border-radius: 0;
     font-family: Montserrat, sans-serif;
 }
 
@@ -265,6 +262,12 @@ footer .glyphicon {
     color: var(--primary-color);
 }
 
+.cv {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+}
 /*---------------TOP BUTTON-----------------------*/
 #topButton {
     display: none;
@@ -307,6 +310,7 @@ a:focus, a:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: end;
 }
 
 p {

@@ -6,7 +6,7 @@
     --gradient-up-hover: #f7e394;
     --gradient-bottom-hover: #ffd0a1;
     --backgroung-color:#f1f0f5cc;
-    --header-color:303030;
+    --header-color: #303030;
 }
 
 html {
@@ -287,21 +287,21 @@ footer .glyphicon {
 
 /*----------PROJECT-----------*/
 a:focus, a:hover {
-	color: #23527c;
+	color: var(--gradient-up-no-hover);
+    text-decoration: none;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 12px 6px 0 rgba(0,0,0,0.2);
     padding: 1em;
     position:relative;
     margin: auto;
-    width: 40%;
     overflow: auto;
     width: min-content;
 }
 
 .card:hover {
-	box-shadow: 0 4px 8px 0 var(--primary-color);
+	box-shadow: 0 12px 6px 0 var(--primary-color);
 }
 
 .container {

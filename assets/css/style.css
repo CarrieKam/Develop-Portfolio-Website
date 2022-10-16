@@ -5,7 +5,7 @@
     --text-button-no-hover: #ffffff;
     --gradient-up-hover: #f7e394;
     --gradient-bottom-hover: #ffd0a1;
-    --backgroung-color:#f1f0f5cc;
+    --background-color:#f1f0f5cc;
     --header-color: #303030;
 }
 
@@ -67,7 +67,7 @@ a > p {
 }
 
 .bg-grey {
-    background-color: var(--backgroung-color);
+    background-color: var(--background-color);
 }
 
 .logo-small {
@@ -295,7 +295,7 @@ a:focus, a:hover {
 }
 
 .card {
-    box-shadow: 0 12px 6px 0 rgba(0,0,0,0.2);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1em;
     position:relative;
     margin: auto;
@@ -304,7 +304,7 @@ a:focus, a:hover {
 }
 
 .card:hover {
-	box-shadow: 0 12px 6px 0 var(--primary-color);
+	box-shadow: 0 12px 6px 1px var(--primary-color);
 }
 
 .container {

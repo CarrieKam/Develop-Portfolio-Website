@@ -41,7 +41,7 @@ h4 {
 }
 
 h5 {
-    font-size: 15px;
+    font-size: 21px;
     color: var(--header-color);;
     font-weight: bold;
 }
@@ -286,22 +286,9 @@ footer .glyphicon {
 }
 
 /*----------PROJECT-----------*/
-/* .project {
-    border:1.5vh solid transparent;
-    padding:1em;
+a:focus, a:hover {
+	color: #23527c;
 }
-.project:hover {
-    border: 1.5vh solid var(--primary-color);
-}
-
-.project img {
-    width: 70em;
-    padding:1em;
-}
-
-a > .project:hover > p{
-    text-decoration: none;
-} */
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -313,11 +300,19 @@ a > .project:hover > p{
     width: min-content;
 }
 
+.card:hover {
+	box-shadow: 0 4px 8px 0 var(--primary-color);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
+p {
+	margin: 0 0 10px;
+	font-size: initial;
+}
 /*------------------------------Screen size difference-------------------------*/
 @media screen and (max-width: 768px) {
     .col-sm-4 {

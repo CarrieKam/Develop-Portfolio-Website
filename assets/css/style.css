@@ -309,13 +309,13 @@ a > .project:hover > p{
     position:relative;
     margin: auto;
     width: 40%;
- /*   display: inline-block;
-     vertical-align: text-top; */
+    overflow: auto;
+    width: min-content;
 }
 
-#fullStack {
-    align-items: center;
-    display:flexbox;
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*------------------------------Screen size difference-------------------------*/
@@ -349,23 +349,23 @@ a > .project:hover > p{
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
-    .project img,iframe {
-        width: 84vw;
+    .project img {
+        width: 28vw;
         margin-bottom: 10px;
     }
     .project iframe {
-        width: 84vw;
-        height:50vh;
+        width: 25vw;
+        height:14vh;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .project img,iframe {
-        width: 28vw;
+        width: 24vw;
         margin-bottom: 10px;
     }
     .project iframe {
-        width: 28vw;
-        height:30vh;
+        width: 21vw;
+height: 21vh;
     }
 }

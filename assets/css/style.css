@@ -82,7 +82,8 @@ a > p {
 
 /*-----------CAROUSEL--------------*/
 #myCarousel {
-    padding: 3em;
+	padding: 3em;
+	margin: 2em 0px 0px 0px;
 }
 
 .carousel-control.right,
@@ -226,7 +227,7 @@ footer .glyphicon {
     }
 }
 
-#social {
+.social {
     padding: 15px;
 }
 

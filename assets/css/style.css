@@ -165,7 +165,7 @@ a > p {
     margin-bottom: 0;
     background-color: var(--primary-color);
     border: 0;
-    font-size: 12px !important;
+    font-size: 15px !important;
     letter-spacing: 4px;
     font-family: Montserrat, sans-serif;
 }
@@ -318,6 +318,21 @@ p {
 	margin: 0 0 10px;
 	font-size: initial;
 }
+
+/**************Education ****************/
+.box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+    max-width: 70vh;
+}
+
 /*------------------------------Screen size difference-------------------------*/
 @media screen and (max-width: 768px) {
     .col-sm-4 {
@@ -366,6 +381,6 @@ p {
     }
     .project iframe {
         width: 21vw;
-height: 21vh;
+        height: 21vh;
     }
 }

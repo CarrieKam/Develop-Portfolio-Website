@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.tsx
+import { PortfolioProvider } from './context/PortfolioContext';
+import Navigation from './components/Navigation';
+import Profile from './components/Profile';
+import About from './components/About';
+import Loading from './components/Loading';
+import ThemeToggle from './components/ThemeToggle';
+import LanguageSelector from './components/LanguageSelector';
+import { usePortfolio } from './context/PortfolioContext';
 
-function App() {
-  const [count, setCount] = useState(0)
+const AppContent = () => {
+  const { isLoading, theme } = usePortfolio();
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+      <div className="fixed top-4 right-4 flex space-x-4">
+        <ThemeToggle />
+        <LanguageSelector />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Navigation />
+      <main className="max-w-4xl mx-auto">
+        <Profile />
+        <About />
+      </main>
+    </div>
+  );
+};
 
-export default App
+const App = () => {
+  return (
+    <PortfolioProvider>
+      <AppContent />
+    </PortfolioProvider>
+  );
+};
+
+export default App;

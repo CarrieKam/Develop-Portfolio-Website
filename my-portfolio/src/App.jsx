@@ -17,7 +17,7 @@ const AppContent = () => {
 
   return (
     <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
-      <div className="fixed top-4 right-4 flex space-x-4">
+      <div className="fixed top-4 left-4 flex space-x-4">
         <ThemeToggle />
         <LanguageSelector />
       </div>

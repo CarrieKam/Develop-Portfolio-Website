@@ -9,7 +9,7 @@ const ThemeToggle = () => {
     <button 
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className={`
-        relative w-24 h-14 rounded-full transition-colors duration-300 
+        relative w-24 h-12 rounded-full transition-colors duration-300 
         ${theme === 'dark' ? 'bg-[#A3466A]' : 'bg-[#3DB7CA]'}
         hover:opacity-90
       `}
@@ -18,9 +18,9 @@ const ThemeToggle = () => {
       {/* Eye Container - White Circle */}
       <div 
         className={`
-          absolute top-1 h-12 w-12 rounded-full bg-[#E3CAC6]
+          absolute top-1 h-10 w-10 rounded-full bg-[#E3CAC6]
           transition-all duration-300 flex items-center justify-center
-          ${theme === 'dark' ? 'left-2' : 'left-10'}
+          ${theme === 'dark' ? 'left-2' : 'left-12'}
         `}
       >
         {/* Sun and Moon Icons */}

@@ -18,9 +18,9 @@ const Profile = () => {
 
     return (
         <div>
-            <div className="flex items-center justify-between pt-36">
+            <div className="flex items-center justify-between pt-64">
                 <div className="space-y-4">
-                <h1 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}></h1>
+                <h1 className="text-xl font-bold text-gray-900 dark:text-white"></h1>
                 <h1 className="text-7xl font-bold">{greeting}!<br></br> I'm {profile.name}</h1>
                 <h2 className="text-2xl">{profile.status} {profile.place} {profile.program}</h2>
                 <h2 className="text-2xl">{profile.description}</h2>

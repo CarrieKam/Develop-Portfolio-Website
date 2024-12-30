@@ -8,7 +8,7 @@ const portfolioData: Language = {
       status: "4th year student at",
       place: "Polytechnique Montreal University",
       program: "in Software Engineering",
-      description: "with a strong interest in innovative technology and real-world applications. Constantly building side projects and diving into new tech to expand my skills and stay on the cutting edge. Eager to bring my dedication and creativity to a forward-thinking team in the tech industry.",
+      description: "I have a strong interest in innovative technology and real-world applications. Constantly building side projects and diving into new tech to expand my skills and stay on the cutting edge. Eager to bring my dedication and creativity to a forward-thinking team in the tech industry.",
     },
     about: {
       skills: ["Self-taught: Front-End (Angular and React)"],
@@ -54,12 +54,13 @@ interface PortfolioContextType {
 
 const PortfolioContext = createContext<PortfolioContextType | undefined>(undefined);
 
-// PortfolioProvider is a special component that "provides" the PortfolioContext to its children components.
-export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<LanguageType>('en'); // This sets up language with an initial value of 'en'
-  const [theme, setTheme] = useState<ThemeType>('dark');
+function PortfolioProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguage] = useState<LanguageType>('en');
   const [isLoading, setIsLoading] = useState(true);
   const [content, setContent] = useState<Language>(portfolioData);
+  const [theme, setTheme] = useState<ThemeType>(() => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
 
   // Simulate initial loading
   // useEffect runs a function once after the component renders
@@ -70,12 +71,32 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     return () => clearTimeout(timer);
   }, []);
 
-  // Theme handling
+  // Apply the theme to the document's root element
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
 
-                      // newContent may only include some properties of PortfolioData, making it flexible for updates without requiring all of PortfolioData
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+    }
+    localStorage.setItem('theme', theme);
+
+  }, [theme]); // This effect runs whenever the 'theme' state changes
+
+  // Catches in real-time if the theme changed in the browser
+  useEffect(() => {
+    const preferDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (mediaEvent: MediaQueryListEvent) => {
+      setTheme(mediaEvent.matches ? 'dark' : 'light');
+    };
+
+    preferDark.addEventListener('change', handleChange);
+
+    return () => preferDark.removeEventListener('change', handleChange);
+  }, []);
+
   const updateContent = (newContent: Partial<PortfolioData>) => {
     setContent(prev => ({
       // copies all properties from prev (the previous content state) into a new object, ensuring other parts of content stay unchanged
@@ -106,13 +127,14 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       {children}
     </PortfolioContext.Provider>
   );
-};
+}
 
-// usePortfolio is a shortcut to access the PortfolioContext in other components
-export const usePortfolio = () => {
+function usePortfolio() {
   const context = useContext(PortfolioContext);
   if (context === undefined) {
     throw new Error('usePortfolio must be used within a PortfolioProvider');
   }
   return context;
-};
+}
+
+export { PortfolioProvider, usePortfolio };

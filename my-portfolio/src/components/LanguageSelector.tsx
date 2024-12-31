@@ -30,7 +30,7 @@ const LanguageSelector = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center justify-between w-20 h-12 px-3 bg-[#E3CAC6] text-black rounded-md focus:outline-none"
+        className="flex items-center justify-between w-20 h-12 px-3 bg-[#E3CAC6] text-black rounded-lg "
       >
         <span className="font-medium">{language.toUpperCase()}</span>
         

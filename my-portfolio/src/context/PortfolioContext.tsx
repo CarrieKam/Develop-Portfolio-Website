@@ -11,9 +11,28 @@ const portfolioData: Language = {
       description: "I have a strong interest in innovative technology and real-world applications. Constantly building side projects and diving into new tech to expand my skills and stay on the cutting edge. Eager to bring my dedication and creativity to a forward-thinking team in the tech industry.",
     },
     about: {
-      skills: ["Self-taught: Front-End (Angular and React)"],
-      operatingSystems: ["Window", "Linux (Fedora, Ubuntu, Lubuntu)"],
-      learning: ["Take notes and organized them in my Wikipedia (Obsidian)"]
+      achievements: [
+        {
+          title: "Hackathon",
+          description: "Attended 10+ Hackathons (Hack the North, PolyHX, sheHacks, etc.), mostly online and always ready to code like a storm!",
+        },
+        {
+          title: "McHacks9 Entertainer Prize",
+          description: "Awarded the Entertainer prize at McHacks9 for the project: Scanspect - because who says potatoes can't be fun?",
+        },
+        {
+          title: "Data Visualization",
+          description: "As a class option, chose a data visualization class, because numbers deserve to be dressed up in style",
+        },
+        {
+          title: "FreeCodeCamp Certified",
+          description: "Completed the FreeCodeCamp certification for Responsive Web Design for +300 hours",
+        },
+        {
+          title: "Angular",
+          description: "Mastered Front-End skills (Angular) through sheer determination and boundless curiosity.",
+        }
+      ]
     },
     social: {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
@@ -30,9 +49,28 @@ const portfolioData: Language = {
       description: "Aime faire des projets personnels et découvrir de nouvelles technologies",
     },
     about: {
-      skills: ["Autodidacte: Front-End (Angular et React)"],
-      operatingSystems: ["Window", "Linux (Fedora, Ubuntu, Lubuntu)"],
-      learning: ["Prendre des notes et les organiser dans mon Wikipedia (Obsidian)"]
+      achievements: [
+        {
+          title: "Hackathon",
+          description: "Attended 10+ Hackathons (Hack the North, PolyHX, sheHacks, etc.), mostly online and always ready to code like a storm!",
+        },
+        {
+          title: "McHacks9 Entertainer Prize",
+          description: "Awarded the Entertainer prize at McHacks9 for the project: Scanspect - because who says potatoes can't be fun?",
+        },
+        {
+          title: "Data Visualization",
+          description: "As a class option, chose a data visualization class, because numbers deserve to be dressed up in style",
+        },
+        {
+          title: "FreeCodeCamp Certified",
+          description: "Completed the FreeCodeCamp certification for Responsive Web Design for +300 hours",
+        },
+        {
+          title: "Angular",
+          description: "Mastered Front-End skills (Angular) through sheer determination and boundless curiosity.",
+        }
+      ]
     },
     social: {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",

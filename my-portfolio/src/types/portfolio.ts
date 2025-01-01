@@ -13,9 +13,13 @@ export interface Social {
   }
   
   export interface About {
-    skills: string[];
-    operatingSystems: string[];
-    learning: string[];
+    achievements: [
+      {title: string, description: string}, 
+      {title: string, description: string},
+      {title: string, description: string},
+      {title: string, description: string}, 
+      {title: string, description: string}, 
+    ];
   }
   
   export interface PortfolioData {

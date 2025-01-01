@@ -9,22 +9,30 @@ import LanguageSelector from './components/LanguageSelector';
 import { usePortfolio } from './context/PortfolioContext';
 
 const AppContent = () => {
-  const { isLoading, theme } = usePortfolio();
+  const { isLoading } = usePortfolio();
 
   if (isLoading) {
     return <Loading />;
   }
 
   return (
-    <div className={`min-h-screen bg-white text-gray-900 dark:text-white dark:bg-gray-900`}>
-      <div className="fixed top-4 left-4 flex space-x-4">
-        <ThemeToggle />
-        <LanguageSelector />
+    <div className={`min-h-screen bg-white text-gray-900 dark:text-white dark:bg-[#090B10]`}>
+      <div className="bg-white dark:bg-[#090B10] w-full">
+        <div className="fixed top-0 left-0 right-0 h-20 bg-white dark:bg-[#090B10] z-10">
+          <div className="fixed top-4 left-4 flex space-x-4">
+            <ThemeToggle />
+            <LanguageSelector />
+          </div>
+          <Navigation />
+        </div>
       </div>
-      <Navigation />
-      <main className="max-w-4xl mx-auto">
-        <Profile />
-        <About />
+      <main className="relative pt-24 px-4 max-w-4xl mx-auto">
+        <div className="min-h-[calc(100vh-6rem)]">
+          <Profile />
+        </div>
+        <div className="min-h-screen">
+          <About />
+        </div>
       </main>
     </div>
   );

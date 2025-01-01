@@ -3,18 +3,17 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
 import girl from '../assets/girl.png'
 
-
 const Profile = () => {
-    const { data } = usePortfolio();
-    const { profile, social } = data;
-    const [greeting, setGreeting] = useState();
+  const { data } = usePortfolio();
+  const { profile, social } = data;
+  const [greeting, setGreeting] = useState();
 
-    useEffect(() => {
-        const hour = new Date().getHours();
-        if (hour < 12) setGreeting('Good morning');
-        else if (hour < 18) setGreeting('Good afternoon');
-        else setGreeting('Good evening');
-      }, []);
+  useEffect(() => {
+    const hour = new Date().getHours();
+    if (hour < 12) setGreeting('Good morning');
+    else if (hour < 18) setGreeting('Good afternoon');
+    else setGreeting('Good evening');
+  }, []);
 
     return (
         <div>
@@ -25,10 +24,10 @@ const Profile = () => {
                     <h2 className="text-2xl leading-10">{profile.status} {profile.place} {profile.program}</h2>
                     <h2 className="text-2xl leading-10">{profile.description}</h2>
                     <div className="flex space-x-4 mt-4">
-                        <button className="px-6 py-3 bg-[#3DB7CA] text-2xl rounded-lg shadow transition-all duration-200 hover:shadow-[inset_0_6px_10px_0_rgba(0,0,0,0.6)]">
+                        <button className="px-6 py-3 bg-[#3DB7CA] text-2xl text-white rounded-lg shadow transition-all duration-200 hover:shadow-[inset_0_6px_10px_0_rgba(0,0,0,0.6)]">
                             CV (fr)
                         </button>
-                        <button className="px-6 py-3 bg-[#3DB7CA] text-2xl rounded-lg shadow transition-all duration-200 hover:shadow-[inset_0_6px_10px_0_rgba(0,0,0,0.6)]">
+                        <button className="px-6 py-3 bg-[#3DB7CA] text-2xl text-white rounded-lg shadow transition-all duration-200 hover:shadow-[inset_0_6px_10px_0_rgba(0,0,0,0.6)]">
                             CV (en)
                         </button>
                     </div>
@@ -51,7 +50,7 @@ const Profile = () => {
             </div>
         </div>               
     </div>
-    );
-  };
+  );
+};
 
-  export default Profile;
+export default Profile;

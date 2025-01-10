@@ -34,6 +34,48 @@ const portfolioData: Language = {
         }
       ]
     },
+    work: {
+      timeline: [
+        {
+          title: "ACP Unit Team ",
+          company: "Canada Border Service Agency",
+          location: "Montreal, QC (Remote)",
+          date: "May – August 2024",
+          description: [
+            "Developed comprehensive interactive dashboards for application components and business services using QualiWare, improving data visualization for senior management",
+            "Created and maintained detailed documentation of over 400 functions and 100 global variables, improving code maintainability and team efficiency",
+            "Debugged and refactored legacy code to eliminate duplicate data creation issues in the evaluation system",
+            "Helping/coaching new students in the team"
+          ],
+          tags: ["QualiWare", "SQL", "TeamWork", "Jira", "Documentation", "Coaching", "Debugging"]
+        },
+        {
+          title: "ACP Unit Team",
+          company: "Canada Border Service Agency",
+          location: "Montreal, QC (Remote)",
+          date: "May – August 2023",
+          description: [
+            "Led bilingual website translation initiative for Agency Collaboration Platform using QualiWare, developing custom solutions and comprehensive documentation",
+            "Orchestrated cross-platform content migration project, collaborating with director-level stakeholders and multiple divisions while implementing frontend optimizations",
+            "Managed and updated enterprise-wide digital product catalog for critical IT asset tracking"
+          ],
+          tags: ["QualiWare", "SQL", "TeamWork", "Jira", "Documentation", "HTML", "CSS", "JavaScript"]
+        },
+        {
+          title: "MLH Fellowship in Production Engineering",
+          company: "Major League Hacking",
+          location: "Montreal, QC (Remote)",
+          date: "Jun – Aug 2022",
+          description: [
+            "Completed 12 weeks of curriculum-based learning covering core Production Engineering topics",
+            "Created an open-source personal portfolio website template using Python, Flask, Jinja, MySQL, Nginx, and unit testing",
+            "Automated testing and deployments workflows using CI/CD (GitHub Action and Bash)",
+            "Set up system and container monitoring using Prometheus and Grafana"
+          ],
+          tags: ["Python", "Flask", "Jinja", "MySQL", "Nginx", "CI/CD", "Prometheus", "Grafana"]
+        }
+      ]
+    },
     social: {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
       github: "https://github.com/CarrieKam",
@@ -44,7 +86,7 @@ const portfolioData: Language = {
     profile: {
       name: "Carrie Kam",
       status: "Étudiant en 4ème année à",
-      place: "l'Université Polytechnique de Montréal",
+      place: "l'université Polytechnique de Montréal",
       program: "en génie logiciel",
       description: "Aime faire des projets personnels et découvrir de nouvelles technologies",
     },
@@ -69,6 +111,48 @@ const portfolioData: Language = {
         {
           title: "Angular",
           description: "Mastered Front-End skills (Angular) through sheer determination and boundless curiosity.",
+        }
+      ]
+    },
+    work: {
+      timeline: [
+        {
+          title: "ACP Unit Team ",
+          company: "Agence des services frontaliers du Canada",
+          location: "Montréal, QC (À distance)",
+          date: "Mai – Août 2024",
+          description: [
+            "Développé des tableaux de bord interactifs complets pour les composants d’application et les services d’entreprise utilisant QualiWare, améliorant la visualisation des données pour la haute direction",
+            "Créé et maintenu une documentation détaillée de plus de 400 fonctions et 100 variables globales, améliorant la maintenabilité du code et l’efficacité de l’équipe",
+            "Déboggé et remanié le code existant pour éliminer les problèmes de création de données en double dans le système d’évaluation",
+            "Aider/coacher les nouveaux étudiants dans l'équipe"
+          ],
+          tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "Coach", "Dégogage"]
+        },
+        {
+          title: "ACP Unit Team",
+          company: "Agence des services frontaliers du Canada",
+          location: "Montréal, QC (À distance)",
+          date: "Mai – Août 2024",
+          description: [
+            "Dirigé l’initiative de traduction bilingue du site web pour la Plateforme de Collaboration de l’Agence utilisant QualiWare, développant des solutions personnalisées et une documentation complète",
+            "Orchestré un projet de migration de contenu multi-plateformes, collaborant avec les parties prenantes au niveau de la direction et plusieurs divisions tout en implémentant des optimisations frontend",
+            "Géré et mis à jour le catalogue de produits numériques à l’échelle de l’entreprise pour le suivi des actifs informatiques critiques"
+          ],
+          tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "HTML", "CSS", "JavaScript"]
+        },
+        {
+          title: "MLH Fellowship en ingénierie de production",
+          company: "Major League Hacking",
+          location: "Montréal, QC (À distance)",
+          date: "Juin – Août 2022",
+          description: [
+            "Complété 12 semaines d’apprentissage basé sur un programme couvrant les sujets fondamentaux de l’ingénierie de production",
+            "Créé un modèle de site web portfolio open-source utilisant Python, Flask, Jinja, MySQL, Nginx, et tests unitaires",
+            "Automatisé les flux de travail de test et de déploiement utilisant CI/CD (GitHub Action et Bash)",
+            "Mis en place la surveillance des systèmes et des conteneurs utilisant Prometheus et Grafana"
+          ],
+          tags: ["Python", "Flask", "Jinja", "MySQL", "Nginx", "CI/CD", "Prometheus", "Grafana", "Docker", "Bash", "GitHub Action"]
         }
       ]
     },
@@ -114,13 +198,11 @@ function PortfolioProvider({ children }: { children: React.ReactNode }) {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
-
     } else {
       document.documentElement.classList.remove('dark');
       document.documentElement.classList.add('light');
     }
     localStorage.setItem('theme', theme);
-
   }, [theme]); // This effect runs whenever the 'theme' state changes
 
   // Catches in real-time if the theme changed in the browser

@@ -44,18 +44,18 @@ const LanguageSelector = () => {
       {isOpen && (
         <div className="absolute top-full left-0 w-20 mt-1 bg-[#E3CAC6] rounded-md ">
           <div className="py-1">
-          <button
-            onClick={() => handleLanguageSelect('en')}
-            className={`w-full px-3 py-2 text-left text-black hover:bg-[#d4b5b0]`}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => handleLanguageSelect('fr')}
-            className={`w-full px-3 py-2 text-left text-black hover:bg-[#d4b5b0]`}
-          >
-            FR
-          </button>
+            <button
+              onClick={() => handleLanguageSelect('en')}
+              className={`w-full px-3 py-2 text-left text-black hover:bg-[#d4b5b0]`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => handleLanguageSelect('fr')}
+              className={`w-full px-3 py-2 text-left text-black hover:bg-[#d4b5b0]`}
+            >
+              FR
+            </button>
           </div>
         </div>
       )}

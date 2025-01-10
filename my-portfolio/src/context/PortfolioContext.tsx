@@ -88,56 +88,56 @@ const portfolioData: Language = {
       status: "Étudiant en 4ème année à",
       place: "l'université Polytechnique de Montréal",
       program: "en génie logiciel",
-      description: "Aime faire des projets personnels et découvrir de nouvelles technologies",
+      description: "J'ai un fort intérêt pour la technologie innovante et les applications réelles. Je construis constamment des projets parallèles et plonge dans de nouvelles technologies pour élargir mes compétences et rester à la pointe. Désireux d'apporter mon dévouement et ma créativité à une équipe avant-gardiste dans l'industrie technologique.",
     },
     about: {
       achievements: [
         {
           title: "Hackathon",
-          description: "Attended 10+ Hackathons (Hack the North, PolyHX, sheHacks, etc.), mostly online and always ready to code like a storm!",
+          description: "Participé à plus de 10 hackathons (Hack the North, PolyHX, sheHacks, etc.), principalement en ligne et toujours prêt à coder comme une tempête!",
         },
         {
-          title: "McHacks9 Entertainer Prize",
-          description: "Awarded the Entertainer prize at McHacks9 for the project: Scanspect - because who says potatoes can't be fun?",
+          title: "Prix de l'animateur McHacks9",
+          description: "Récompensé par le prix de l'animateur à McHacks9 pour le projet : Scanspect - parce que qui a dit que les pommes de terre ne pouvaient pas être amusantes?",
         },
         {
-          title: "Data Visualization",
-          description: "As a class option, chose a data visualization class, because numbers deserve to be dressed up in style",
+          title: "Visualisation des données",
+          description: "En option de cours, choisi un cours de visualisation des données, car les chiffres méritent d'être habillés avec style",
         },
         {
-          title: "FreeCodeCamp Certified",
-          description: "Completed the FreeCodeCamp certification for Responsive Web Design for +300 hours",
+          title: "Certifié FreeCodeCamp",
+          description: "Complété la certification FreeCodeCamp pour la conception Web réactive pour plus de 300 heures",
         },
         {
           title: "Angular",
-          description: "Mastered Front-End skills (Angular) through sheer determination and boundless curiosity.",
+          description: "Maîtrisé les compétences Front-End (Angular) grâce à une détermination sans faille et une curiosité sans bornes.",
         }
       ]
     },
     work: {
       timeline: [
         {
-          title: "ACP Unit Team ",
+          title: "Équipe ACP",
           company: "Agence des services frontaliers du Canada",
           location: "Montréal, QC (À distance)",
           date: "Mai – Août 2024",
           description: [
-            "Développé des tableaux de bord interactifs complets pour les composants d’application et les services d’entreprise utilisant QualiWare, améliorant la visualisation des données pour la haute direction",
-            "Créé et maintenu une documentation détaillée de plus de 400 fonctions et 100 variables globales, améliorant la maintenabilité du code et l’efficacité de l’équipe",
-            "Déboggé et remanié le code existant pour éliminer les problèmes de création de données en double dans le système d’évaluation",
+            "Développé des tableaux de bord interactifs complets pour les composants d'application et les services d'entreprise utilisant QualiWare, améliorant la visualisation des données pour la haute direction",
+            "Créé et maintenu une documentation détaillée de plus de 400 fonctions et 100 variables globales, améliorant la maintenabilité du code et l'efficacité de l'équipe",
+            "Débogué et remanié le code existant pour éliminer les problèmes de création de données en double dans le système d'évaluation",
             "Aider/coacher les nouveaux étudiants dans l'équipe"
           ],
-          tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "Coach", "Dégogage"]
+          tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "Coaching", "Débogage"]
         },
         {
-          title: "ACP Unit Team",
+          title: "Équipe ACP",
           company: "Agence des services frontaliers du Canada",
           location: "Montréal, QC (À distance)",
-          date: "Mai – Août 2024",
+          date: "Mai – Août 2023",
           description: [
-            "Dirigé l’initiative de traduction bilingue du site web pour la Plateforme de Collaboration de l’Agence utilisant QualiWare, développant des solutions personnalisées et une documentation complète",
+            "Dirigé l'initiative de traduction bilingue du site web pour la Plateforme de Collaboration de l'Agence utilisant QualiWare, développant des solutions personnalisées et une documentation complète",
             "Orchestré un projet de migration de contenu multi-plateformes, collaborant avec les parties prenantes au niveau de la direction et plusieurs divisions tout en implémentant des optimisations frontend",
-            "Géré et mis à jour le catalogue de produits numériques à l’échelle de l’entreprise pour le suivi des actifs informatiques critiques"
+            "Géré et mis à jour le catalogue de produits numériques à l'échelle de l'entreprise pour le suivi des actifs informatiques critiques"
           ],
           tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "HTML", "CSS", "JavaScript"]
         },
@@ -147,12 +147,12 @@ const portfolioData: Language = {
           location: "Montréal, QC (À distance)",
           date: "Juin – Août 2022",
           description: [
-            "Complété 12 semaines d’apprentissage basé sur un programme couvrant les sujets fondamentaux de l’ingénierie de production",
+            "Complété 12 semaines d'apprentissage basé sur un programme couvrant les sujets fondamentaux de l'ingénierie de production",
             "Créé un modèle de site web portfolio open-source utilisant Python, Flask, Jinja, MySQL, Nginx, et tests unitaires",
             "Automatisé les flux de travail de test et de déploiement utilisant CI/CD (GitHub Action et Bash)",
             "Mis en place la surveillance des systèmes et des conteneurs utilisant Prometheus et Grafana"
           ],
-          tags: ["Python", "Flask", "Jinja", "MySQL", "Nginx", "CI/CD", "Prometheus", "Grafana", "Docker", "Bash", "GitHub Action"]
+          tags: ["Python", "Flask", "Jinja", "MySQL", "Nginx", "CI/CD", "Prometheus", "Grafana"]
         }
       ]
     },

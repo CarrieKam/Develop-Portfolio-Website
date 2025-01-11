@@ -76,6 +76,92 @@ const portfolioData: Language = {
         }
       ]
     },
+    projects: {
+      project: [
+        {
+          title: "Scanspect",
+          date: "2022",
+          description: [
+            "Scanspect is a website that uses Google Vision API to analyze if the input picture is a potato or not.",
+          ],
+          url: "https://devpost.com/software/scanspect",
+          githubURL: "https://github.com/sandyl289/Scanspect-McHacks-9-",
+          imagePath: "./assets/projects/scanspect.png",
+          tags: ["GoogleCloud", "HTML", "CSS", "JavaScript"],
+          category: "Web Development"
+        },
+        {
+          title: "Portfolio Website",
+          date: "2025",
+          description: [
+            "A personal portfolio website template created using React and Tailwind CSS. The website is designed to be fully responsive."
+          ],
+          url: "carriekam.pages.dev/",
+          githubURL: "https://github.com/CarrieKam/Portfolio-Website",
+          imagePath: "./assets/projects/portfolioWebsite.png",
+          tags: ["React", "Tailwind CSS"],
+          category: "Web Development"
+        },
+        {
+          title: "Data Visualization",
+          date: "2024",
+          description: [
+            "A data visualization project that showcases the games in the Africa Cup of the Nations in 2023 to demonstrate the performance of each team in the tournament.",
+            "The project uses plotly to create interactive visualizations and charts.",
+          ],
+          url: "https://inf8808-projet-6yd6.onrender.com/",
+          githubURL: "https://github.com/gillonlo/INF8808_Projet?tab=readme-ov-file",
+          imagePath: "./assets/projects/africaCup.png",
+          tags: ["Python", "Flask", "Plotly"],
+          category: "Data Visualization"
+        },
+        {
+          title: "Portfolio Website",
+          date: "2024",
+          description: [
+            "A personal portfolio website template created using Figma",
+          ], 
+          url: "https://www.figma.com/proto/4wWCHGU1vIqZMZzMPEo6Gq/Portfolio?node-id=0-1&t=0Nz4JTlNha1pLMy4-1",
+          imagePath: "./assets/projects/figmaPortfolio.png",
+          tags: ["Figma"],
+          category: "User Experience/User Interface"
+        },
+        {
+          title: "Schedule Generator",
+          date: "2024",
+          description: [
+            "A schedule generator web application that helps students create their course schedules depending on where they are in their program.",
+          ], 
+          url: "https://www.figma.com/proto/uEZ2bEPtVF5onom44jVK5I/Portfolio-collectif-2?node-id=116-3804&p=f&t=A3jG04MGlPh562lI-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A3804",
+          imagePath: "./assets/projects/figmaSchedule.png",
+          tags: ["Figma"],
+          category: "User Experience/User Interface"
+        },
+        {
+          title: "Schedule Generator simplified version",
+          date: "2022",
+          description: [
+            "A schedule generator web application that helps students create their course schedules depending on their preference. (Mock-up)",
+          ], 
+          url: "https://www.figma.com/proto/tuw2tt0E7inft0e1DHy7hk/TP2---LOG2420---H22?node-id=360-13505&p=f&t=gt8jCW3bp2DIa33q-0&scaling=min-zoom&content-scaling=fixed&page-id=304%3A7309&starting-point-node-id=360%3A13505&show-proto-sidebar=1",
+          tags: ["Figma"],
+          imagePath: "./assets/projects/figmaAccueilMockUp.png",
+          category: "User Experience/User Interface"
+        },
+        {
+          title: "Schedule Generator simplified version",
+          date: "2022",
+          description: [
+            "A schedule generator web application that helps students create their course schedules depending on their preference. (Wireframe)",
+          ], 
+          url: "https://www.figma.com/proto/tuw2tt0E7inft0e1DHy7hk/TP2---LOG2420---H22?node-id=10-3&p=f&t=gt8jCW3bp2DIa33q-0&scaling=contain&content-scaling=fixed&page-id=2%3A2&starting-point-node-id=10%3A3",
+          githubURL: "",
+          tags: ["Figma"],
+          imagePath: "./assets/pro/figmaWireFrameAccueil.png",
+          category: "User Experience/User Interface"
+        }
+      ]
+    },
     social: {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
       github: "https://github.com/CarrieKam",
@@ -153,6 +239,91 @@ const portfolioData: Language = {
             "Mis en place la surveillance des systèmes et des conteneurs utilisant Prometheus et Grafana"
           ],
           tags: ["Python", "Flask", "Jinja", "MySQL", "Nginx", "CI/CD", "Prometheus", "Grafana"]
+        }
+      ]
+    },
+    projects: {
+      project: [
+        {
+          title: "Scanspect",
+          date: "2022",
+          description: [
+            "Scanspect est un site web qui utilise l'API Google Vision pour analyser si l'image d'entrée est une pomme de terre ou non.",
+          ],
+          url: "https://devpost.com/software/scanspect",
+          githubURL: "https://github.com/sandyl289/Scanspect-McHacks-9-",
+          imagePath: './assets/projects/scanspect.png',
+          tags: ["GoogleCloud", "HTML", "CSS", "JavaScript"],
+          category: "Développement Web"
+        },
+        {
+          title: "Site Web Portfolio",
+          date: "2025",
+          description: [
+            "Un modèle de site web portfolio personnel créé en utilisant React et Tailwind CSS. Le site est conçu pour être entièrement réactif."
+          ],
+          url: "carriekam.pages.dev/",
+          githubURL: "https://github.com/CarrieKam/Portfolio-Website",
+          imagePath: "./assets/images/portfolioWebsite.png",
+          tags: ["React", "Tailwind CSS"],
+          category: "Développement Web"
+        },
+        {
+          title: "Visualisation des données",
+          date: "2024",
+          description: [
+            "Un projet de visualisation des données qui présente les matchs de la Coupe d'Afrique des Nations en 2023 pour démontrer la performance de chaque équipe dans le tournoi.",
+            "Le projet utilise Plotly pour créer des visualisations et des graphiques interactifs.",
+          ],
+          url: "https://inf8808-projet-6yd6.onrender.com/",
+          githubURL: "https://github.com/gillonlo/INF8808_Projet?tab=readme-ov-file",
+          imagePath: "./assets/projects/africaCup.png",
+          tags: ["Python", "Flask", "Plotly"],
+          category: "Visualisation des données"
+        },
+        {
+          title: "Site Web Portfolio",
+          date: "2024",
+          description: [
+            "Un modèle de site web portfolio personnel créé en utilisant Figma",
+          ],
+          url: "https://www.figma.com/proto/4wWCHGU1vIqZMZzMPEo6Gq/Portfolio?node-id=0-1&t=0Nz4JTlNha1pLMy4-1",
+          imagePath: "./assets/projects/figmaPortfolio.png",
+          tags: ["Figma"],
+          category: "Expérience Utilisateur/Interface Utilisateur"
+        },
+        {
+          title: "Générateur d'horaires",
+          date: "2024",
+          description: [
+            "Une application web de génération d'horaires qui aide les étudiants à créer leurs horaires de cours en fonction de leur progression dans leur programme.",
+          ],
+          url: "https://www.figma.com/proto/uEZ2bEPtVF5onom44jVK5I/Portfolio-collectif-2?node-id=116-3804&p=f&t=A3jG04MGlPh562lI-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A3804",
+          imagePath: "./assets/projects/figmaSchedule.png",
+          tags: ["Figma"],
+          category: "Expérience Utilisateur/Interface Utilisateur"
+        },
+        {
+          title: "Générateur d'horaires version simplifiée",
+          date: "2022",
+          description: [
+            "Une application web de génération d'horaires qui aide les étudiants à créer leurs horaires de cours en fonction de leurs préférences. (Prototype)",
+          ],
+          url: "https://www.figma.com/proto/tuw2tt0E7inft0e1DHy7hk/TP2---LOG2420---H22?node-id=360-13505&p=f&t=gt8jCW3bp2DIa33q-0&scaling=min-zoom&content-scaling=fixed&page-id=304%3A7309&starting-point-node-id=360%3A13505&show-proto-sidebar=1",
+          imagePath: "./assets/projects/figmaAccueilMockUp.png",
+          tags: ["Figma"],
+          category: "Expérience Utilisateur/Interface Utilisateur"
+        },
+        {
+          title: "Générateur d'horaires version simplifiée",
+          date: "2022",
+          description: [
+            "Une application web de génération d'horaires qui aide les étudiants à créer leurs horaires de cours en fonction de leurs préférences. (Wireframe)",
+          ],
+          url: "https://www.figma.com/proto/tuw2tt0E7inft0e1DHy7hk/TP2---LOG2420---H22?node-id=10-3&p=f&t=gt8jCW3bp2DIa33q-0&scaling=contain&content-scaling=fixed&page-id=2%3A2&starting-point-node-id=10%3A3",
+          imagePath: "./assets/pro/figmaWireFrameAccueil.png",
+          tags: ["Figma"],
+          category: "Expérience Utilisateur/Interface Utilisateur"
         }
       ]
     },

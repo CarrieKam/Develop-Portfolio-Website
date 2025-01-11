@@ -30,11 +30,25 @@ export interface Work {
   }>;
 }
 
+export interface Projects {
+  project: Array<{
+    title: string;
+    date: string;
+    description: string[];
+    url: string;
+    githubURL?: string;
+    imagePath: string;
+    tags: string[];
+    category: string;
+  }>;
+}
+
 export interface PortfolioData {
   profile: Profile;
   about: About;
   social: Social;
   work: Work;
+  projects: Projects;
 }
 
 export interface Language {

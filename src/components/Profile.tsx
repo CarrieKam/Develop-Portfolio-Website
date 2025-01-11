@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
-import girl from '../assets/girl.png';
+import girl from '../assets/images/girl.png';
+import { Spotlight } from './ui/Spotlight';
 
 const Profile = () => {
   const { data } = usePortfolio();
@@ -17,7 +18,10 @@ const Profile = () => {
 
   return (
     <section id="profile">
-      <div className="flex items-center justify-between min-h-screen mx-8 mb-20">
+      <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
+      <Spotlight className="top-10 left-90 h-[80vh] w-[50vw]" fill="purple"/>
+      <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue"/>
+      <div className="flex items-center justify-between h-screen mx-8 mb-20">
         <div className="space-y-7">
           <h1 className="text-7xl mt-20 font-bold leading-30">
             {greeting}!<br /> I'm <span className="underline decoration-sky-500">{profile.name}</span>

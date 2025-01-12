@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { usePortfolio } from '../context/PortfolioContext';
 import { FaGithub } from "react-icons/fa";
 import projectIcon from '../assets/logos/project.svg';
+import { BackgroundGradient } from './ui/background-gradient';
 
 const WorkTimeline = () => {
   const { data } = usePortfolio();
@@ -59,7 +60,7 @@ const WorkTimeline = () => {
                     // Takes a project object as a prop and renders the project details
   const ProjectCard = ({ project }: { project: typeof projectsByCategory[keyof typeof projectsByCategory][0] }) => (
     <div className="flex items-center justify-center lg:min-h-[32.5rem] h-[25rem] sm:w-96 w-[80vw] mt-8">
-      <div className="border-2 border-[#3DB7CA] rounded-lg p-4 mx-auto">
+      <BackgroundGradient className="p-4 mx-auto rounded-[22px] bg-white dark:bg-zinc-900">
         <div className="flex justify-center">
           <img src={project.imagePath} alt={project.title} className="w-64 h-40 object-cover rounded-lg" />
         </div>
@@ -82,7 +83,7 @@ const WorkTimeline = () => {
             ))}
           </div>
         </div>
-      </div>
+      </BackgroundGradient>
     </div>
   );
 
@@ -96,8 +97,8 @@ const WorkTimeline = () => {
       {/*Map over the grouped projects and render each category with its projects*/}
       {Object.entries(projectsByCategory).map(([category, projects]) => (
         <div key={category} className="mb-16">
-          <h3 className="text-3xl font-semibold mb-8 mx-8">{category}</h3>
-          <div className="flex flex-wrap items-center justify-center p-4 gap-24">
+          <h3 className="text-3xl font-semibold mx-8">{category}</h3>
+          <div className="flex flex-wrap items-center justify-center p-4 gap-24 sm:mt-4">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}

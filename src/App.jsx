@@ -8,6 +8,7 @@ import LanguageSelector from './components/LanguageSelector';
 import { usePortfolio } from './context/PortfolioContext';
 import WorkTimeline from './components/WorkTimeline';
 import Projects from './components/Project';
+import Education from './components/Education';
 
 const AppContent = () => {
   const { isLoading } = usePortfolio();
@@ -37,6 +38,9 @@ const AppContent = () => {
         </div>
         <div className="min-h-full">
           <Projects />
+        </div>
+        <div className="min-h-full">
+          <Education />
         </div>
       </main>
     </div>

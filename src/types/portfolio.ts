@@ -43,12 +43,21 @@ export interface Projects {
   }>;
 }
 
+export interface Education {
+  schools: Array<{
+    name: string;
+    program: string;
+    year: string[];
+  }>;
+}
+
 export interface PortfolioData {
   profile: Profile;
   about: About;
   social: Social;
   work: Work;
   projects: Projects;
+  education: Education;
 }
 
 export interface Language {

@@ -162,6 +162,25 @@ const portfolioData: Language = {
         }
       ]
     },
+    education: {
+      schools: [
+        {
+          name: "Polytechnique Montreal University",
+          program: "Software Engineering",
+          year: ["Winter 2021 - Winter 2025"]
+        },
+        {
+          name: "Polytechnique Montreal University",
+          program: "Electrical Engineering",
+          year: ["Winter 2020 - Fall 2020"]
+        },
+        {
+          name: "College Maisonneuve",
+          program: "Computer Science and Mathematics",
+          year: ["Fall 2017 - Winter 2020"]
+        },
+      ]
+    },
     social: {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
       github: "https://github.com/CarrieKam",
@@ -325,6 +344,25 @@ const portfolioData: Language = {
           tags: ["Figma"],
           category: "Expérience Utilisateur/Interface Utilisateur"
         }
+      ]
+    },
+    education: {
+      schools: [
+        {
+          name: "Université Polytechnique Montréal",
+          program: "Génie logiciel",
+          year: ["Hiver 2021 - Hiver 2025"]
+        },
+        {
+          name: "Université Polytechnique Montréal",
+          program: "Génie électrique",
+          year: ["Hiver 2020 - Automne 2020"]
+        },
+        {
+          name: "Collège Maisonneuve",
+          program: "Science informatique et mathématiques",
+          year: ["Automne 2017 - Hiver 2020"]
+        },
       ]
     },
     social: {

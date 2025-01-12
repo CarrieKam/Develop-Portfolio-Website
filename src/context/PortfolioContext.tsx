@@ -94,12 +94,12 @@ const portfolioData: Language = {
           title: "Portfolio Website",
           date: "2025",
           description: [
-            "A personal portfolio website template created using React and Tailwind CSS. The website is designed to be fully responsive."
+            "A personal portfolio website crafted with React and styled with Tailwind CSS. Designed for seamless responsiveness, it incorporates the Aceternity UI library for enhanced visual effects"
           ],
           url: "carriekam.pages.dev/",
           githubURL: "https://github.com/CarrieKam/Portfolio-Website",
           imagePath: "./assets/projects/portfolioWebsite.png",
-          tags: ["React", "Tailwind CSS"],
+          tags: ["React", "Tailwind CSS", "Aceternity UI"],
           category: "Web Development"
         },
         {
@@ -279,12 +279,12 @@ const portfolioData: Language = {
           title: "Site Web Portfolio",
           date: "2025",
           description: [
-            "Un modèle de site web portfolio personnel créé en utilisant React et Tailwind CSS. Le site est conçu pour être entièrement réactif."
+            "portfolio personnel conçu avec React et stylé avec Tailwind CSS. Conçu pour une réactivité parfaite, il intègre la bibliothèque Aceternity UI pour des effets visuels améliorés."
           ],
           url: "carriekam.pages.dev/",
           githubURL: "https://github.com/CarrieKam/Portfolio-Website",
           imagePath: "./assets/images/portfolioWebsite.png",
-          tags: ["React", "Tailwind CSS"],
+          tags: ["React", "Tailwind CSS", "Aceternity UI"],
           category: "Développement Web"
         },
         {

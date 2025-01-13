@@ -58,6 +58,11 @@ export interface PortfolioData {
   work: Work;
   projects: Projects;
   education: Education;
+  ending: Ending;
+}
+
+export interface Ending {
+  text: string;
 }
 
 export interface Language {

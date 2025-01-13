@@ -185,7 +185,10 @@ const portfolioData: Language = {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
       github: "https://github.com/CarrieKam",
       email: "carriekam@protonmail.com"
-    }
+    },
+    ending: {
+      text: "Thank you for visiting my portfolio! If you have any questions or would like to connect, feel free to reach out.",
+    },
   },
   fr: {
     profile: {
@@ -369,6 +372,9 @@ const portfolioData: Language = {
       linkedin: "https://www.linkedin.com/in/carrie-kam-1837b3193/",
       github: "https://github.com/CarrieKam",
       email: "carriekam@protonmail.com"
+    },
+    ending: {
+      text: "Merci de votre visite. N'hésitez pas à me contacter.",
     }
   }
 };

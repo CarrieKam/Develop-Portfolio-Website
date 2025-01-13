@@ -25,7 +25,7 @@ export interface Work {
     company: string;
     location: string;
     date: string;
-    description: string[]; 
+    description: string[];
     tags: string[];
   }>;
 }

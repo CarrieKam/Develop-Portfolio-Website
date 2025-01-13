@@ -18,9 +18,9 @@ const Profile = () => {
 
   return (
     <section id="profile">
-      <Spotlight className="-top-100 left-100 md:-left-32 md:-top-20 h-[220vh]" fill="#E3CAC6"/>
-      <Spotlight className="top-10 left-90 h-[80vh] w-[50vw]" fill="purple"/>
-      <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue"/>
+      <Spotlight className="-top-100 left-100 md:-left-32 md:-top-20 h-[220vh]" fill="#E3CAC6" />
+      <Spotlight className="top-10 left-90 h-[80vh] w-[50vw]" fill="purple" />
+      <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       <div className="flex items-center justify-between h-screen mx-8 mb-20">
         <div className="space-y-7">
           <h1 className="text-7xl mt-20 font-bold leading-30">

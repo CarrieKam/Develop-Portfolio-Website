@@ -35,7 +35,6 @@ const WorkTimeline = () => {
     });
 
     // Group projects by category and sort by date within each category
-                                                    // Acc = accumulator
     const groupedProjects = projectsWithImages.reduce((acc, project) => {
       if (!acc[project.category]) {
         acc[project.category] = [];

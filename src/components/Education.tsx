@@ -13,9 +13,8 @@ const Education = () => {
       </div>
 
       <HoverEffect items={data.education.schools} />
-      
     </section>
-  )
+  );
 }
 
 export default Education;

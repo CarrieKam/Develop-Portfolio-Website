@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import { Menu } from '@headlessui/react';
 

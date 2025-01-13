@@ -9,6 +9,7 @@ import { usePortfolio } from './context/PortfolioContext';
 import WorkTimeline from './components/WorkTimeline';
 import Projects from './components/Project';
 import Education from './components/Education';
+import Footer from './components/Footer';
 
 const AppContent = () => {
   const { isLoading } = usePortfolio();
@@ -33,16 +34,13 @@ const AppContent = () => {
         <div className="min-h-full">
           <About />
         </div>
-        <div className="min-h-full">
           <WorkTimeline />
-        </div>
-        <div className="min-h-full">
           <Projects />
-        </div>
-        <div className="min-h-full">
           <Education />
-        </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

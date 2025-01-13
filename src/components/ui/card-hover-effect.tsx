@@ -79,7 +79,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-3xl h-full w-full p-6 overflow-hidden bg-black border border-neutral-800 relative z-20 transition-all duration-200",
+        "rounded-3xl h-full w-full p-6 overflow-hidden bg-white dark:bg-black border border-neutral-800 relative z-20 transition-all duration-200",
         className
       )}
     >
@@ -98,7 +98,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-lg text-white font-semibold tracking-wide mb-4", className)}>
+    <h4 className={cn("text-lg dark:text-white font-semibold tracking-wide mb-4", className)}>
       {children}
     </h4>
   );

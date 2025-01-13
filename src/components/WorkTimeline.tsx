@@ -16,7 +16,7 @@ const WorkTimeline = () => {
         <Timeline data={data.work.timeline.map(entry => ({
           title: [{ date: entry.date, location: entry.location }],
           content: (
-            <div className="p-4 bg-gray-100 dark:bg-[#1a2c34] rounded-lg shadow-md border w-96">
+            <div className="p-4 bg-gray-100 dark:bg-[#1a2c34] rounded-lg shadow-md border ">
               <p className="text-lg font-medium">{entry.company}</p>
               <ul className="list-disc ml-4 space-y-2">
                 {entry.description.map((desc, index) => (

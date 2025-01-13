@@ -98,7 +98,7 @@ const WorkTimeline = () => {
       {Object.entries(projectsByCategory).map(([category, projects]) => (
         <div key={category} className="md:mb-16 md:px-4 ">
           <h3 className="text-3xl font-semibold mx-8 mb-8 md:mt-6">{category}</h3>
-          <div className="flex flex-wrap items-start justify-start p-4 md:mt-4 gap-8">
+          <div className="flex flex-wrap items-center justify-center p-4 md:mt-4 gap-8">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}

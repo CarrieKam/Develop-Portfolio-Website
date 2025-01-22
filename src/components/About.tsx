@@ -39,10 +39,12 @@ const About = () => {
       <div className="space-y-4 relative">
         {achievements.map((achievement, index) => (
           <div key={index} className="relative">
+            {/*Arrow down*/}
             {achievement.title === 'Hackathon' && (
               <div className="absolute left-12 top-full w-px h-24 bg-[#203d49] dark:bg-[#3DB7CA] p-2 z-10" />
             )}
 
+            {/*Arrow left*/}
             <div
               className={`p-8 rounded-lg transition-colors duration-200 relative mx-8 ${
                 achievement.title === 'McHacks9 Entertainer Prize'

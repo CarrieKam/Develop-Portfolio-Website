@@ -21,7 +21,7 @@ const Profile = () => {
       <Spotlight className="-top-100 left-100 md:-left-32 md:-top-20 h-[220vh]" fill="#E3CAC6" />
       <Spotlight className="top-10 left-90 h-[80vh] w-[50vw]" fill="purple" />
       <Spotlight className="top-28 left-80 h-[20vh] w-[20vw]" fill="blue" />
-      <div className="flex flex-col md:flex-row items-center justify-between h-screen mx-8 mb-20">
+      <div className="flex flex-col md:flex-row items-center justify-between lg:h-screen md:h-full mx-8 mb-20">
         <div className="space-y-7 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl lg:text-7xl mt-20 font-bold leading-30">
             {greeting}!<br /> I'm <span className="underline decoration-sky-500">{profile.name}</span>
@@ -39,9 +39,9 @@ const Profile = () => {
             </button>
           </div>
         </div>
-        <div className="relative mt-10 md:mt-0">
-          <div className="w-40 h-40 md:w-60 md:h-60 ml-4 bg-gray-200 rounded-full">
-            <img src={girl} alt="Asian girl image" className="w-full h-full object-cover rounded-full" />
+        <div className="relative mt-10 md:mt-0 ">
+          <div className="w-40 h-40 md:w-60 md:h-60 md:mb-5 ml-4 bg-gray-200 rounded-full">
+            <img src={girl} alt="Asian girl image" className="w-full h-full object-contain rounded-full" />
           </div>
           <div className="flex space-x-6 mt-4 ml-4 justify-center">
             <a href={social.linkedin} target="_blank" rel="noopener noreferrer">

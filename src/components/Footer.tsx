@@ -16,7 +16,7 @@ const Footer = () => {
             </BackgroundBeamsWithCollision>
             <TypewriterEffectSmooth 
                 words={[{ text: data.ending.text }]}
-                className="absolute inset-0 z-10 break-words flex items-center justify-center text-2xl" 
+                className="absolute inset-0 z-10 break-words flex items-center justify-center" 
             />
         </div>
     );

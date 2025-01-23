@@ -16,6 +16,7 @@ export interface About {
   achievements: Array<{
     title: string;
     description: string;
+    iconKey: string;
   }>;
 }
 

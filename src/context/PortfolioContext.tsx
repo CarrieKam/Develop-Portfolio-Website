@@ -15,22 +15,27 @@ const portfolioData: Language = {
         {
           title: "Hackathon",
           description: "Attended 10+ Hackathons (Hack the North, PolyHX, sheHacks, etc.), mostly online and always ready to code like a storm!",
+          iconKey: "hackathon",
         },
         {
           title: "McHacks9 Entertainer Prize",
           description: "Awarded the Entertainer prize at McHacks9 for the project: Scanspect - because who says potatoes can't be fun?",
+          iconKey: "mcHacks9EntertainerPrize",
         },
         {
           title: "Data Visualization",
           description: "As a class option, chose a data visualization class, because numbers deserve to be dressed up in style",
+          iconKey: "dataVisualization",
         },
         {
           title: "FreeCodeCamp Certified",
           description: "Completed the FreeCodeCamp certification for Responsive Web Design for +300 hours",
+          iconKey: "freeCodeCampCertified",
         },
         {
           title: "Angular",
           description: "Mastered Front-End skills (Angular) through sheer determination and boundless curiosity.",
+          iconKey: "angular",
         }
       ]
     },
@@ -203,22 +208,32 @@ const portfolioData: Language = {
         {
           title: "Hackathon",
           description: "Participé à plus de 10 hackathons (Hack the North, PolyHX, sheHacks, etc.), principalement en ligne et toujours prêt à coder comme une tempête!",
+          iconKey: "hackathon",
+
         },
         {
           title: "Prix de l'animateur McHacks9",
           description: "Récompensé par le prix de l'animateur à McHacks9 pour le projet : Scanspect - parce que qui a dit que les pommes de terre ne pouvaient pas être amusantes?",
+          iconKey: "mcHacks9EntertainerPrize",
+
         },
         {
           title: "Visualisation des données",
           description: "En option de cours, choisi un cours de visualisation des données, car les chiffres méritent d'être habillés avec style",
+          iconKey: "dataVisualization",
+
         },
         {
           title: "Certifié FreeCodeCamp",
           description: "Complété la certification FreeCodeCamp pour la conception Web réactive pour plus de 300 heures",
+          iconKey: "freeCodeCampCertified",
+
         },
         {
           title: "Angular",
           description: "Maîtrisé les compétences Front-End (Angular) grâce à une détermination sans faille et une curiosité sans bornes.",
+          iconKey: "angular",
+
         }
       ]
     },

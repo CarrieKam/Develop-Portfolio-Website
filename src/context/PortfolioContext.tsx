@@ -42,7 +42,7 @@ const portfolioData: Language = {
     work: {
       timeline: [
         {
-          title: "ACP Unit Team ",
+          title: "Junior IT Programmer/Analyst",
           company: "Canada Border Service Agency",
           location: "Montreal, QC (Remote)",
           date: "May – August 2024",
@@ -55,7 +55,7 @@ const portfolioData: Language = {
           tags: ["QualiWare", "SQL", "TeamWork", "Jira", "Documentation", "Coaching", "Debugging"]
         },
         {
-          title: "ACP Unit Team",
+          title: "Junior IT Programmer/Analyst",
           company: "Canada Border Service Agency",
           location: "Montreal, QC (Remote)",
           date: "May – August 2023",
@@ -240,7 +240,7 @@ const portfolioData: Language = {
     work: {
       timeline: [
         {
-          title: "Équipe ACP",
+          title: "Programmeur/Analyste junior en TI",
           company: "Agence des services frontaliers du Canada",
           location: "Montréal, QC (À distance)",
           date: "Mai – Août 2024",
@@ -253,7 +253,7 @@ const portfolioData: Language = {
           tags: ["QualiWare", "SQL", "TravailÉquipe", "Jira", "Documentation", "Coaching", "Débogage"]
         },
         {
-          title: "Équipe ACP",
+          title: "Programmeur/Analyste junior en TI",
           company: "Agence des services frontaliers du Canada",
           location: "Montréal, QC (À distance)",
           date: "Mai – Août 2023",

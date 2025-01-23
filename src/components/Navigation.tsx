@@ -7,12 +7,55 @@ import workIcon from '../assets/logos/work.svg';
 import projectsIcon from '../assets/logos/project.svg';
 import educationIcon from '../assets/logos/education.svg';
 
+// Import your portfolio context or language context
+import { usePortfolio } from '../context/PortfolioContext';
+
+// Updated navigation items type to support multilingual names
+interface NavigationItem {
+  name: {
+    en: string;
+    fr: string;
+  };
+  icon: string;
+  id: string;
+}
+
 const Navigation = () => {
-  const navigationItems = [
-    { name: 'About', icon: aboutIcon, id: 'about' },
-    { name: 'Work', icon: workIcon, id: 'work' },
-    { name: 'Projects', icon: projectsIcon, id: 'projects' },
-    { name: 'Education', icon: educationIcon, id: 'education' },
+  const { language } = usePortfolio(); // Assuming you have a language prop in your context
+
+  const navigationItems: NavigationItem[] = [
+    { 
+      name: { 
+        en: 'About', 
+        fr: 'À propos' 
+      }, 
+      icon: aboutIcon, 
+      id: 'about' 
+    },
+    { 
+      name: { 
+        en: 'Work', 
+        fr: 'Expérience' 
+      }, 
+      icon: workIcon, 
+      id: 'work' 
+    },
+    { 
+      name: { 
+        en: 'Projects', 
+        fr: 'Projets' 
+      }, 
+      icon: projectsIcon, 
+      id: 'projects' 
+    },
+    { 
+      name: { 
+        en: 'Education', 
+        fr: 'Éducation' 
+      }, 
+      icon: educationIcon, 
+      id: 'education' 
+    },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -41,13 +84,13 @@ const Navigation = () => {
         <div className="hidden lg:flex space-x-4">
           {navigationItems.map(({ name, icon, id }) => (
             <button
-              key={name}
+              key={id}
               onClick={() => scrollToSection(id)}
               className="flex items-center px-3 py-2 rounded-lg text-xl 
                          relative overflow-hidden cursor-pointer"
             >
-              <img src={icon} alt={name} className="w-10 h-10 mr-2" />
-              {name}
+              <img src={icon} alt={name[language]} className="w-10 h-10 mr-2" />
+              {name[language]}
               <span
                 className="absolute inset-0 border-[#A3466A] border-2 
                            rounded-lg opacity-0 transition-opacity duration-100 
@@ -87,8 +130,8 @@ const Navigation = () => {
                                 active ? "bg-gray-200 dark:bg-gray-800" : ""
                               } flex items-center w-full px-4 py-2 text-sm dark:text-gray-200 hover:bg-gray-300 hover:dark:bg-gray-700`}
                             >
-                              <img src={icon} alt={name} className="mr-3 w-5 h-5" />
-                              {name}
+                              <img src={icon} alt={name[language]} className="mr-3 w-5 h-5" />
+                              {name[language]}
                             </button>
                           )}
                         </Menu.Item>

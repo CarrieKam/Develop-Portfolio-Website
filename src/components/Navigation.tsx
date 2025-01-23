@@ -7,73 +7,45 @@ import workIcon from '../assets/logos/work.svg';
 import projectsIcon from '../assets/logos/project.svg';
 import educationIcon from '../assets/logos/education.svg';
 
-// Import your portfolio context or language context
 import { usePortfolio } from '../context/PortfolioContext';
 
-// Updated navigation items type to support multilingual names
+// Interface for navigation items, supporting multilingual names
 interface NavigationItem {
   name: {
-    en: string;
-    fr: string;
+    en: string; 
+    fr: string; 
   };
-  icon: string;
-  id: string;
+  icon: string; // Icon path
+  id: string; // Section ID for navigation
 }
 
 const Navigation = () => {
-  const { language } = usePortfolio(); // Assuming you have a language prop in your context
+  const { language } = usePortfolio();
 
+  // Define navigation items with multilingual names, icons, and section IDs
   const navigationItems: NavigationItem[] = [
-    { 
-      name: { 
-        en: 'About', 
-        fr: 'À propos' 
-      }, 
-      icon: aboutIcon, 
-      id: 'about' 
-    },
-    { 
-      name: { 
-        en: 'Work', 
-        fr: 'Expérience' 
-      }, 
-      icon: workIcon, 
-      id: 'work' 
-    },
-    { 
-      name: { 
-        en: 'Projects', 
-        fr: 'Projets' 
-      }, 
-      icon: projectsIcon, 
-      id: 'projects' 
-    },
-    { 
-      name: { 
-        en: 'Education', 
-        fr: 'Éducation' 
-      }, 
-      icon: educationIcon, 
-      id: 'education' 
-    },
+    { name: { en: 'About', fr: 'À propos' }, icon: aboutIcon, id: 'about' },
+    { name: { en: 'Work', fr: 'Expérience' }, icon: workIcon, id: 'work' },
+    { name: { en: 'Projects', fr: 'Projets' }, icon: projectsIcon, id: 'projects' },
+    { name: { en: 'Education', fr: 'Éducation' }, icon: educationIcon, id: 'education' },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State for mobile menu visibility
 
+  // Function to scroll to a specific section smoothly
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 80;
+      const offset = 80; // Adjust for header height
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
 
-      // Close menu after clicking (for mobile)
-      setIsOpen(false);
+      setIsOpen(false); // Close the menu after clicking
     }
   };
 
@@ -85,12 +57,12 @@ const Navigation = () => {
           {navigationItems.map(({ name, icon, id }) => (
             <button
               key={id}
-              onClick={() => scrollToSection(id)}
+              onClick={() => scrollToSection(id)} // Scroll to the corresponding section
               className="flex items-center px-3 py-2 rounded-lg text-xl 
                          relative overflow-hidden cursor-pointer"
             >
-              <img src={icon} alt={name[language]} className="w-10 h-10 mr-2" />
-              {name[language]}
+              <img src={icon} alt={name[language]} className="w-10 h-10 mr-2" /> {/* Icon */}
+              {name[language]} {/* Section name */}
               <span
                 className="absolute inset-0 border-[#A3466A] border-2 
                            rounded-lg opacity-0 transition-opacity duration-100 
@@ -100,23 +72,25 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* Small screen */}
+        {/* Mobile Navigation */}
         <div className="lg:hidden cursor-pointer">
           <Menu as="div" className="relative inline-block text-left">
             {({ open }) => {
-              // Sync Menu's open state with our local state
+              // Sync Menu's open state with local state
               if (open !== isOpen) {
                 setIsOpen(open);
               }
               
               return (
                 <>
+                  {/* Mobile Menu Button */}
                   <Menu.Button 
                     className="p-2 text-black dark:text-gray-200 hover:bg-gray-300 hover:dark:bg-gray-700 rounded-lg transition-colors"
                   >
                     <MenuIcon className="size-6" />
                   </Menu.Button>
 
+                  {/* Dropdown Menu */}
                   <Menu.Items
                     className="absolute right-0 mt-2 w-48 origin-top-right rounded-lg bg-gray-200 dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                   >
@@ -125,13 +99,13 @@ const Navigation = () => {
                         <Menu.Item key={id}>
                           {({ active }) => (
                             <button
-                              onClick={() => scrollToSection(id)}
+                              onClick={() => scrollToSection(id)} // Scroll on click
                               className={`${
                                 active ? "bg-gray-200 dark:bg-gray-800" : ""
                               } flex items-center w-full px-4 py-2 text-sm dark:text-gray-200 hover:bg-gray-300 hover:dark:bg-gray-700`}
                             >
-                              <img src={icon} alt={name[language]} className="mr-3 w-5 h-5" />
-                              {name[language]}
+                              <img src={icon} alt={name[language]} className="mr-3 w-5 h-5" /> {/* Icon */}
+                              {name[language]} {/* Section name */}
                             </button>
                           )}
                         </Menu.Item>

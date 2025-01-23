@@ -5,7 +5,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { usePortfolio } from '../context/PortfolioContext';
 
 const Footer = () => {
-    const { data } = usePortfolio();
+    const { data, language } = usePortfolio();
 
     return (
         <div className="relative w-full h-[40rem]">
@@ -15,7 +15,7 @@ const Footer = () => {
                target="_blank" 
                rel="noopener noreferrer">
                 <button className="px-6 py-3 bg-[#3DB7CA] text-lg md:text-2xl text-white rounded-lg shadow transition-all duration-200 hover:shadow-[inset_0_6px_10px_0_rgba(0,0,0,0.6)]">
-                Learning Log
+                {language === 'en' ? 'Learning Log' : 'Journal d\'apprentissage'}
                 </button>
             </a>
             <div className="absolute bottom-4 w-full text-center dark:text-neutral-200 z-10">

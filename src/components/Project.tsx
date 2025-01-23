@@ -77,7 +77,7 @@ const WorkTimeline = () => {
         <br />
         <button className="px-8 py-1 border-x-slate-200 border-2 bg-white dark:bg-black relative group transition duration-200 text-black dark:text-white hover:bg-transparent hover:bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg">
           <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-lg">
-          {language === 'fr' ? 'Consulter projet' : 'View Projects'}
+          {language === 'fr' ? 'Consulter projet' : 'View Project'}
           </a>
         </button>
 

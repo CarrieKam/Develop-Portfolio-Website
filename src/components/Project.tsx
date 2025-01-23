@@ -5,7 +5,7 @@ import projectIcon from '../assets/logos/project.svg';
 import { BackgroundGradient } from './ui/background-gradient';
 
 const WorkTimeline = () => {
-  const { data } = usePortfolio();
+  const { data, language } = usePortfolio();
   const [projectsByCategory, setProjectsByCategory] = useState<{
     [key: string]: Array<{
       imagePath: string;
@@ -91,7 +91,9 @@ const WorkTimeline = () => {
     <section id="projects" className="mb-20">
       <div className="flex items-center space-x-4 mb-8 mx-8">
         <img src={projectIcon} alt="Project icon" className="w-16 h-16" />
-        <h2 className="text-4xl font-bold">Projects</h2>
+        <h2 className="text-4xl font-bold">
+          {language === 'fr' ? 'Projets' : 'Projects'} 
+        </h2>
       </div>
 
       {/* Map over the grouped projects and render each category with its projects */}

@@ -3,13 +3,15 @@ import workIcon from '../assets/logos/work.svg';
 import { Timeline } from './ui/timeline';
 
 const WorkTimeline = () => {
-  const { data } = usePortfolio();
+  const { data, language } = usePortfolio();
 
   return (
     <section id="work" className="max-w-7xl mx-auto px-8 mb-20">
       <div className="flex items-center space-x-4 mb-8">
         <img src={workIcon} alt="Work icon" className="w-12 h-12" />
-        <h2 className="text-4xl font-bold">Work</h2>
+        <h2 className="text-4xl font-bold">
+          {language === 'fr' ? 'Expérience professionnelle' : 'Work experience'}
+        </h2>
       </div>
       
       <div className="w-full">

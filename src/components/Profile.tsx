@@ -5,7 +5,7 @@ import { usePortfolio } from '../context/PortfolioContext';
 import { Spotlight } from './ui/Spotlight';
 
 const Profile = () => {
-  const { data } = usePortfolio();
+  const { data, language } = usePortfolio();
   const { profile, social } = data;
 
   const [greeting, setGreeting] = useState<string>(''); // State to store the greeting based on the time of day
@@ -13,10 +13,20 @@ const Profile = () => {
   // Set the greeting message based on the current hour
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour < 12) setGreeting('Good morning');
-    else if (hour < 18) setGreeting('Good afternoon');
-    else setGreeting('Good evening');
-  }, []);
+    let greetingMessage = '';
+
+    if (language === 'en') {
+      if (hour < 12) greetingMessage = 'Good morning!';
+      else if (hour < 18) greetingMessage = 'Good afternoon!';
+      else greetingMessage = 'Good evening!';
+    } else {
+      if (hour < 12) greetingMessage = 'Bonjour!';
+      else if (hour < 18) greetingMessage = 'Bon après-midi!';
+      else greetingMessage = 'Bonsoir!';
+    }
+
+    setGreeting(greetingMessage);
+  }, [language]);
 
   return (
     <section id="profile" className="mb-20">
@@ -28,9 +38,9 @@ const Profile = () => {
       {/* Container for profile content */}
       <div className="flex flex-col md:flex-row items-center justify-between lg:h-screen md:h-full mx-8 mb-20">
         {/* Left side: Text and buttons */}
-        <div className="space-y-7 text-center md:text-left">
+        <div className="space-y-7 text-center md:text-left ">
           <h1 className="text-3xl md:text-5xl lg:text-7xl mt-20 font-bold leading-30">
-            {greeting}!<br /> I'm <span className="underline decoration-sky-500">{profile.name}</span>
+            {greeting}<br /> {language === 'en' ? "I'm" : "Je suis"} <span className="underline decoration-sky-500 whitespace-nowrap">{profile.name}</span>
           </h1>
           <h2 className="text-lg md:text-lg lg:text-2xl leading-10">
             {profile.status} {profile.place} {profile.program}

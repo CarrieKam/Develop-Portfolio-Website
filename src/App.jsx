@@ -31,13 +31,13 @@ const AppContent = () => {
         </div>
       </div>
       <main className="relative max-w-4xl mx-auto">
-          <Profile />
+        <Profile />
         <div className="min-h-full">
           <About />
         </div>
-          <WorkTimeline />
-          <Projects />
-          <Education />
+        <WorkTimeline />
+        <Projects />
+        <Education />
       </main>
       <footer>
         <Footer />
